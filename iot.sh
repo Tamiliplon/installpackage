@@ -36,9 +36,9 @@ tar -xJf serverData.tar.xz -C /
 
 mysql -u root -piplon321 iSolar_db < /home/iplon/iSolar_db.sql
 
-sed -i -e "s/80/8000/g" /etc/apache2/ports.conf
+#sed -i -e "s/80/8000/g" /etc/apache2/ports.conf
 systemctl daemon-reload
-service apache2 restart
+#service apache2 restart
 
 sudo apt update -y
 sleep 5;
